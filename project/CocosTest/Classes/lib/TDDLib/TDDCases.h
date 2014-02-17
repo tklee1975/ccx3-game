@@ -15,6 +15,9 @@
 
 // Add the Header here!
 #include "SampleTest.h"
+#include "CCActionTest.h"
+#include "SpineTest.h"
+#include "GUIHelperTest.h"
 
 // MACRO
 #define ADD_CASE(__ClassName__)					{#__ClassName__, []() { return new __ClassName__(); } }
@@ -23,6 +26,9 @@
 TDDTestCase gTestArray[] =
 {
 	ADD_CASE(TDDTest),
+	ADD_CASE(SpineTest),
+	ADD_CASE(GUIHelperTest),
+	ADD_CASE(CCActionTest),
 	ADD_CASE(TDDSample1),
 };
 
